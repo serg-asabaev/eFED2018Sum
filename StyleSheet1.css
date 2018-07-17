@@ -1,8 +1,11 @@
 ﻿body {
+    margin-top:-3px;
+    margin-left:-3px;
+    width:100%;
 }
 
 #top {
-    background-color:antiquewhite;
+    background-color:lightgray;
     height: 50px;
     padding-top: 25px;
     padding-left:45px
@@ -14,66 +17,143 @@
     background-color:deepskyblue;
 }
 
+#input {
+    margin-left:80%;
+}
+#air_dirt {
+    margin-left:15px;
+}
 #left {
     height:400px;
     width:40%;
-    position:relative;
     right:0px;
     float:left;
-    background-color:azure;
-    padding-left:50px;
+    background-color:#FFFFF0;
+    padding-left:95px;
 }
 
 #right {
     height:395px;
     width:60%; 
     margin-left:40%;
-    position:relative;
     left:0px;
-    background-color:cornsilk;
+    background-color:#FFFFF0;
     padding-top:5px;
 }
 #inform {
-    width:100%;
+    width:98%;
     height:350px;
-    background-color:lightgreen;
+    background-color:#FFFFF0;
     padding-left:25px;
     padding-top:15px;
 }
 
 #bottom {
+    height: 35px;
     width:100%;
-    background-color:darkcyan;
+    background-color:#D7D7D7;
+    border:1px solid black;
+    border-left:none;
+    border-right:none;
+    padding-top:10px;
 }
 
 #search {
     width:100%;
     display:inline-block;
+    background-color:lightgray;
+    border:1px solid black;
+    border-left:none;
+    border-right:none;
 }
 
-#time {
-     position:center;
+#prognose {
+    margin-top: 25px;
 }
 #graphic {
     display: inline-block;
 }
+
+#foot_label {
+    margin-left:45%;
+}
+#time {
+    width: 1100px;
+    border-top:3px solid black;
+}
+
+
+#gr_1 {
+  height:70px;
+  width:50px;
+}
+
+#gr_2 {
+    height:70px;
+  width:50px;
+}
+#gr_3 {
+    height:70px;
+  width:50px;
+}
+#gr_4 {
+    height:60px;
+  width:50px;
+}
+#gr_5 {
+   height:55px;
+   width:50px;
+}
+#gr_6 {
+   height:65px;
+   width:50px;
+}
+#gr_7 {
+   height:70px;
+   width:50px;
+}
+#gr_8 {
+   height:70px;
+   width:50px;
+}
+#city {
+     font-size:25pt;
+}
+#temp {
+    margin-top:0px;
+    right:0px;
+     font-size:30pt;
+     float:right;
+}
+
+.num {
+     margin-left:90px;
+     margin-top:5px;
+     color:#7F7679;
+}
+
 .button {
     font-size: 20pt;
     background-color:white;
     margin-right:5px;
+    margin-left:10px;
     padding: 5px;
+}
+.day_of_week {
+    color:#7F7679;
 }
 
 .active_button {
     font-size: 20pt;
     background-color: darkgray;
+    margin-left:10px;
     padding: 5px;
 }
-.gr {
-    background-color: blue;
-    height: 75px;
-    width: 50px;
 
+.gr {
+    background-color:#7F7679;
+    vertical-align:bottom;
+    display:inline-block;
 }
 
 .nav {
@@ -82,13 +162,32 @@
 }
 
 .cell {
-    position:center;
     margin-left:75px;
+    display: inline-block;
+}
+
+.val {
+    color:#7F7679;
+}
+.prog_el{
+    margin-left:55px;
      display: inline-block;
 }
 
-.prog_el{
-     position:center;
-    margin-left:85px;
-     display: inline-block;
+.first_cell {
+    background-color:darkgrey;
+    width:200px;
+    height: 50px;
+}
+
+.another_cell {
+    background-color:lightgray;
+    width: 100px;
+}
+
+.temperature {
+    font-style:normal;
+    font-weight:lighter;
+    margin:0px 3px;
+    color:#7F7679;
 }

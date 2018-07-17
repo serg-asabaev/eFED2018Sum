@@ -7,28 +7,32 @@
 	<meta charset="utf-8" />
 </head>
 <body>
-    <header id="top">
+    <header>
+        <div id="top">
         <span class="active_button">Сегодня</span>
         <span class="button"><a href="5_days.html">5 дней</a></span>
-        <span class="button"><a href="history.html">История погоды</a></span>
+        <span class="button"><a href="historical-review.html">История погоды</a></span>
+        </div>
+        <form>
+            <nav id="search">
+                <div id="air_dirt" class="nav"><b>Загрязнение воздуха: 234234е-123</b></div>
+                <span id="input" class="nav">
+                    <input type="text" placeholder="Поиск">
+                    <button>Найти</button>
+                </span>
+            </nav>
+        </form>
     </header>
-    <form>
-        <nav id="search">
-          <div id="air_dirt" class="nav"><b>Загрязнение воздуха: 234234е-123</b></div>
-          <span id="input" class="nav">
-            <input type="text" placeholder="Поиск">
-            <button>Найти</button>
-          </span>
-        </nav>
-    </form>
+   
     <main id="main">
+        <section id="left_right">
         <div id="left">
-            <h1>Ижевск,Россия</h1>
-            <h2>Среда</h2>
-            <h2>Облачно</h2>
+            <p id="city">Ижевск,Россия</p>
+            <h1>Среда</h1>
+            <h1>Облачно</h1>
             <div style="width:35%">
              <img src="images/Cloudy Weather@3x.png" align="left" alt="Извините картинка не доступна">
-             <h1 align="right">22 C</h1>
+             <p  id="temp" align="right">22°C</p>
             </div>
         </div>
         <div id="right">
@@ -39,29 +43,40 @@
             <span class="button">Вероятность осадков</span>
             <span class="active_button">Ветер</span>
         </div>
+        </section>
+        <section id="inform">
+            <div id="grphic">
+                <div class="cell"><b class="val">14</b> <br /><div class="gr" id="gr_1"></div></div>
+                <div class="cell"><b class="val">14</b> <br /><div class="gr" id="gr_2"></div></div>
+                <div class="cell"><b class="val">14</b> <br /><div class="gr" id="gr_3"></div></div>
+                <div class="cell"><b class="val">12</b> <br /><div class="gr" id="gr_4"></div></div>
+                <div class="cell"><b class="val">11</b> <br /><div class="gr" id="gr_5"></div></div>
+                <div class="cell"><b class="val">13</b> <br /><div class="gr" id="gr_6"></div></div>
+                <div class="cell"><b class="val">14</b> <br /><div class="gr" id="gr_7"></div></div>
+                <div class="cell"><b class="val">14</b> <br /><div class="gr" id="gr_8"></div></div>
+            </div>
+            <div id="time">
+                <b class="num">17:00</b>
+                <b class="num">20:00</b>
+                <b class="num">23:00</b>
+                <b class="num">2:00</b>
+                <b class="num">5:00</b>
+                <b class="num">8:00</b>
+                <b class="num">11:00</b>
+                <b class="num">14:00</b>
+            </div>
+            <div id="prognose">
+                <div class="prog_el"><b class="day_of_week">Пн</b><br><img src="images/Cloudy Weather@2x.png" alt="Извините картинка не доступна"><br><b class="temperature"> 24°С</b> <b class="temperature"> 24°С</b></div>
+                <div class="prog_el"><b class="day_of_week">Вт</b><br><img src="images/Cloudy Weather@2x.png" alt="Извините картинка не доступна"><br><b class="temperature"> 22°С</b> <b class="temperature"> 24°С</b></div>
+                <div class="prog_el"><b class="day_of_week">Ср</b><br><img src="images/Cloudy Weather@2x.png" alt="Извините картинка не доступна"><br><b class="temperature"> 22°С</b> <b class="temperature"> 24°С</b></div>
+                <div class="prog_el"><b class="day_of_week">Чт</b><br><img src="images/Cloudy Weather@2x.png" alt="Извините картинка не доступна"><br><b class="temperature"> 22°С</b> <b class="temperature"> 24°С</b></div>
+                <div class="prog_el"><b class="day_of_week">Пт</b><br><img src="images/Cloudy Weather@2x.png" alt="Извините картинка не доступна"><br><b class="temperature"> 22°С</b> <b class="temperature"> 24°С</b></div>
+                <div class="prog_el"><b class="day_of_week">Сб</b><br><img src="images/Cloudy Weather@2x.png" alt="Извините картинка не доступна"><br><b class="temperature"> 22°С</b> <b class="temperature"> 24°С</b></div>
+                <div class="prog_el"><b class="day_of_week">Вс</b><br><img src="images/Cloudy Weather@2x.png" alt="Извините картинка не доступна"><br><b class="temperature"> 22°С</b> <b class="temperature"> 24°С</b></div>
+                <div class="prog_el"><b class="day_of_week">Пн</b><br><img src="images/Cloudy Weather@2x.png" alt="Извините картинка не доступна"><br><b class="temperature"> 22°С</b> <b class="temperature"> 24°С</b></div>
+            </div>
+        </section>
     </main>
-    <div id="inform">
-        <div id="grphic">
-            <div class="cell"><b class="val">15</b> <br/><div class="gr"></div> <b class="num">20:00</b></div>
-            <div class="cell"><b class="val">15</b> <br /><div class="gr"></div> <b class="num">20:00</b></div>
-            <div class="cell"><b class="val">15</b> <br /><div class="gr"></div> <b class="num">20:00</b></div>
-            <div class="cell"><b class="val">15</b> <br /><div class="gr"></div> <b class="num">20:00</b></div>
-            <div class="cell"><b class="val">15</b> <br /><div class="gr"></div> <b class="num">20:00</b></div>
-            <div class="cell"><b class="val">15</b> <br /><div class="gr"></div> <b class="num">20:00</b></div>
-            <div class="cell"><b class="val">15</b> <br /><div class="gr"></div> <b class="num">20:00</b></div>
-            <div class="cell"><b class="val">15</b> <br /><div class="gr"></div> <b class="num">20:00</b></div>
-        </div>
-        <div id="prognose">
-            <div class="prog_el"><b class="day_of_week">Пн</b><br><img src="images/Cloudy Weather.png" alt="Извините картинка не доступна"><br><b id="temperature"> 22 С</b></div>
-            <div class="prog_el"><b class="day_of_week">Вт</b><br><img src="images/Cloudy Weather.png" alt="Извините картинка не доступна"><br><b id="temperature"> 22 С</b></div>
-            <div class="prog_el"><b class="day_of_week">Ср</b><br><img src="images/Cloudy Weather.png" alt="Извините картинка не доступна"><br><b id="temperature"> 22 С</b></div>
-            <div class="prog_el"><b class="day_of_week">Чт</b><br><img src="images/Cloudy Weather.png" alt="Извините картинка не доступна"><br><b id="temperature"> 22 С</b></div>
-            <div class="prog_el"><b class="day_of_week">Пт</b><br><img src="images/Cloudy Weather.png" alt="Извините картинка не доступна"><br><b id="temperature"> 22 С</b></div>
-            <div class="prog_el"><b class="day_of_week">Сб</b><br><img src="images/Cloudy Weather.png" alt="Извините картинка не доступна"><br><b id="temperature"> 22 С</b></div>
-            <div class="prog_el"><b class="day_of_week">Вс</b><br><img src="images/Cloudy Weather.png" alt="Извините картинка не доступна"><br><b id="temperature"> 22 С</b></div>
-            <div class="prog_el"><b class="day_of_week">Пн</b><br><img src="images/Cloudy Weather.png" alt="Извините картинка не доступна"><br><b id="temperature"> 22 С</b></div>
-        </div>
-    </div>
-    <footer id="bottom" text-align="center"><b>Ижевск 2018г.</b></footer>
+    <footer id="bottom"><b id="foot_label">Ижевск 2018г.</b></footer>
 </body>
 </html>
