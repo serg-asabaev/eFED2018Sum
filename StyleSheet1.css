@@ -46,6 +46,7 @@
     background-color:#FFFFF0;
     padding-left:25px;
     padding-top:15px;
+    
 }
 
 #bottom {
@@ -56,6 +57,8 @@
     border-left:none;
     border-right:none;
     padding-top:10px;
+    position:relative;
+    
 }
 
 #search {
@@ -69,19 +72,91 @@
 
 #prognose {
     margin-top: 25px;
+
 }
 #graphic {
     display: inline-block;
 }
 
 #foot_label {
-    margin-left:45%;
+    transform:translate(-50%,-50%);
+    position:absolute;
+    top:50%;
+    left:50%;
+    resize:both;
+    overflow:auto;
+
 }
 #time {
     width: 1100px;
     border-top:3px solid black;
 }
 
+.main_5_day {
+    width:100%;
+    height:100%;
+    position:relative;
+    background-color:aqua;
+}
+
+.row_5_day {
+    background-color:red;
+}
+
+.temperature_5_day {
+    text-align:center;
+}
+
+.today {
+}
+
+.moon_sun{
+    transform:translate(-50%,-50%);
+    position:absolute;
+    top:50%;
+    left:50%;
+    resize:both;
+    overflow:auto;
+ }
+
+.prognose {
+    display:inline-block;
+    vertical-align: middle;
+}
+
+.wind_speed_5_day {
+    width:216px;
+}
+
+.wind_gr {
+    display:inline-block;
+    width:20px;
+    height:20px;
+    background-color:yellow;
+}
+
+.top_inform {
+    transform:translate(-50%,-50%);
+    position:absolute;
+    top:50%;
+    left:50%;
+    resize:both;
+    overflow:auto;
+}
+
+.bottom_inform {
+}
+
+.placeholder {
+    content:"";
+}
+
+.placeholder::before {
+    width:20px;
+    height:20px;
+    content:"";
+    background-image: url("http://s1.iconbird.com/ico/2013/1/569/w24h24138981479606magnify.png");
+}
 
 #gr_1 {
   height:70px;
@@ -125,7 +200,10 @@
      font-size:30pt;
      float:right;
 }
-
+#history_table {
+    background-color:white;
+    margin-top:40px;
+}
 .num {
      margin-left:90px;
      margin-top:5px;
@@ -138,6 +216,10 @@
     margin-right:5px;
     margin-left:10px;
     padding: 5px;
+}
+
+#label {
+    position:relative;
 }
 .day_of_week {
     color:#7F7679;
@@ -154,6 +236,17 @@
     background-color:#7F7679;
     vertical-align:bottom;
     display:inline-block;
+}
+
+.rainfall {
+     text-align:center;
+}
+
+.rainfall_el {
+    width:60px;
+    height:60px;
+    display:inline-block;
+    vertical-align: middle;
 }
 
 .nav {
@@ -176,12 +269,12 @@
 
 .first_cell {
     background-color:darkgrey;
-    width:200px;
-    height: 50px;
+     width: 100px;
+     background-color:#FFFFF0;
 }
 
-.another_cell {
-    background-color:lightgray;
+.second_cell {
+    background-color:#B0C4DE;
     width: 100px;
 }
 
